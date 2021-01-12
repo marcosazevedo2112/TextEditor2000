@@ -42,7 +42,8 @@ body{
 }
 
 #container #right h1:hover{
-    color: #212121;
+    color: #212121;   
+    
 }
 
 #container #left{    
@@ -103,8 +104,14 @@ body{
     margin-top: 2em;
     height: 150px;
     width: 75%;
-    border-radius: 5rem 0.5rem;
+    border-radius: 3rem 0.3rem;
     color: white;
     background-color: var(--left-color);
     transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#container #left #box #result:hover{
+    background-color: #212121;
+    border-radius: 0.3rem 3rem;
+    color: var(--left-color);
 }
