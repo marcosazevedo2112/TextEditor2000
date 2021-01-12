@@ -1,0 +1,110 @@
+:root{
+    --left-color: #ff435b;
+}
+
+body{
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+}
+
+#bg{
+    padding: 0%;
+    margin: 0%;
+    background: #FF416C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#container{
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#container #right{
+    box-sizing: content-box;
+    margin-top: 8%;
+    margin-left: 9%;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 3rem;
+    letter-spacing: 2.8rem;
+}
+
+#container #right h1{
+    margin: 0%;   
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#container #right h1:hover{
+    color: #212121;
+}
+
+#container #left{    
+    box-sizing: content-box;
+    margin-top: 8%;
+    margin-right: 9%;
+    width: 30%;
+    border-radius: 5rem 0.5rem;
+    padding: 25px;
+    color: var(--left-color);
+    font-family: 'Poppins';
+    background-color: white;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#container #left:hover{
+    border-radius: 0.5rem 5rem;
+}
+
+#container #left #box{
+    text-align: center;
+}
+
+#container #left hr{
+    background-color: var(--left-color); height: 1px; border: 0;
+}
+
+#container #left #box h3{
+    margin-top: 0%;
+    padding-top: 0%;
+}
+#container #left #box #radio-btn{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#container #left #box textarea#textIn{
+    padding: 20px;
+    resize: none;
+    height: 2em;
+    width: 75%;
+    border-bottom: 1px solid var(--left-color);
+    border-top: 1px solid white;
+    border-left:  1px solid white;
+    border-right:  1px solid white;
+    border-radius: 22px;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-property: border-color;
+}
+#container #left #box textarea#textIn:focus{
+    outline: none;
+    border: 1px solid var(--left-color);
+}
+
+#container #left #box #result{
+    display: inline-block;
+    margin-top: 2em;
+    height: 150px;
+    width: 75%;
+    border-radius: 5rem 0.5rem;
+    color: white;
+    background-color: var(--left-color);
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
