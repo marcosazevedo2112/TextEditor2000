@@ -99,7 +99,10 @@ body{
     border: 1px solid var(--left-color);
 }
 
-#container #left #box #result{
+#container #left #box #textOut{
+    cursor: pointer;
+    word-break: break-all;
+    padding: 20px;
     display: inline-block;
     margin-top: 2em;
     height: 150px;
@@ -110,7 +113,7 @@ body{
     transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-#container #left #box #result:hover{
+#container #left #box #textOut:hover{
     background-color: #212121;
     border-radius: 0.3rem 3rem;
     color: var(--left-color);
